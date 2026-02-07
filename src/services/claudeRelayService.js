@@ -28,7 +28,7 @@ const safeClone =
 
 class ClaudeRelayService {
   constructor() {
-    this.claudeApiUrl = 'https://api.anthropic.com/v1/messages?beta=true'
+    this.claudeApiUrl = 'https://api.anthropic.com/v1/messages'
     // 🧹 内存优化：用于存储请求体字符串，避免闭包捕获
     this.bodyStore = new Map()
     this._bodyStoreIdCounter = 0
